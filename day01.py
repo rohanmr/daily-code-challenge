@@ -1,22 +1,23 @@
-arr=[1,0,2,1,2,1,0,1]
+arr = [0, 1, 2, 1, 0, 2, 1, 0]
 
-def SortArry(arr):
+def sortArray(arr):
     n=len(arr)
-
+    
     for i in range(n):
-        mini=i  
+        mini=i
         for j in range(i+1,n):
-            if arr[mini]>arr[j]:
-                mini=j 
+            if arr[mini] > arr[j]:
+                mini=j
+        
+        arr[i],arr[mini]=arr[mini],arr[i]
 
-        arr[mini],arr[i]=arr[i],arr[mini] 
-             
-
-
-SortArry(arr)
+sortArray(arr)
 print(arr)
 
 
 
-        
+
+
+
+    
     
