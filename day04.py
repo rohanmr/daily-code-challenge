@@ -7,7 +7,7 @@ def sortedArrayMerge(arr1,arr2):
 
     i,j=0,0
 
-    while i < len(arr1) and j <len(arr2):
+    while i < len(arr1) and j < len(arr2):
         if arr1[i] < arr2[j]:
             new.append(arr1[i])
             i+=1
